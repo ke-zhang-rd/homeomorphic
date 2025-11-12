@@ -130,7 +130,7 @@ def main():
         print(top_holdings.to_string())
         
         # Save to CSV
-        fetcher.save_to_csv(processed_df, "current.csv")
+        fetcher.save_to_csv(processed_df)
         
     else:
         print("Failed to fetch holdings data")
