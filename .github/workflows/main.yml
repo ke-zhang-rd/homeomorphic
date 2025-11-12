@@ -5,7 +5,7 @@ on:
     # Runs at 9:00 AM UTC, Monday to Friday
     # Format: minute hour day-of-month month day-of-week
     # day-of-week: 1-5 represents Monday to Friday
-    - cron: '45 10 * * 1-5'
+    - cron: '0 23 * * 1-5'
   
   # Allows manual triggering from the Actions tab
   workflow_dispatch:
