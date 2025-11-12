@@ -132,15 +132,6 @@ def main():
         # Save to CSV
         fetcher.save_to_csv(processed_df)
         
-        # Display summary statistics if weight column exists
-        weight_cols = [col for col in processed_df.columns if 'weight' in col.lower()]
-        if weight_cols:
-            weight_col = weight_cols[0]
-            print(f"\nWeight Statistics:")
-            print(f"Total Weight: {processed_df[weight_col].sum():.2f}%")
-            print(f"Top 10 Weight: {top_holdings[weight_col].sum():.2f}%")
-            print(f"Average Weight: {processed_df[weight_col].mean():.2f}%")
-            print(f"Median Weight: {processed_df[weight_col].median():.2f}%")
     else:
         print("Failed to fetch holdings data")
 
